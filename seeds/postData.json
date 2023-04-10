@@ -1,0 +1,17 @@
+[
+    {
+      "name": "Music Near Me",
+      "post_text": "I love music",
+      "user_id": 1
+    },
+    {
+      "name": "Bike rentals Near me",
+      "post_text": "I love bikes",
+      "user_id": 2
+    },
+    {
+      "name": "Ice cream Near Me",
+      "post_text": "I love ice cream",
+      "user_id":3
+    }
+  ]

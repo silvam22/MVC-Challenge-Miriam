@@ -1,4 +1,4 @@
-document.querySelector('#login-form').addEventListener('submit',(event)=>{
+document.querySelector('#signup-form').addEventListener('submit',(event)=>{
     event.preventDefault()
 
     const username = document.querySelector('#username').value 
@@ -10,24 +10,18 @@ document.querySelector('#login-form').addEventListener('submit',(event)=>{
     } else if (username.length<4) {
         printMessage('Username cannot be less than 4 characters')
     } else {
-        fetch('/api/users/login', {
+        fetch('/api/users/signup', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({username, password})
         })
         .then((response)=>{
             if (response.ok) {
-                printMessage('Logged in successfully')
+                printMessage('User account created successfully')
                 document.location.replace('/dashboard')
-            } else {
-                return response.json()
             }
         }) 
-        .then((data)=>{
-            printMessage(data.message)
-        })
         .catch((error)=>{
-            console.log('err', error.response)
             printMessage('Error occured try again')
         })
     }

@@ -1,0 +1,9 @@
+{{#each comments}}
+<div class="comment">
+  <h3>{{name}}</h3>
+  <p>{{body}}</p>
+  <form method="POST" action="/comments/{{id}}">
+    <button type="submit">Delete Comment</button>
+  </form>
+</div>
+{{/each}}
