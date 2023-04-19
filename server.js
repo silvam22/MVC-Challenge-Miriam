@@ -31,8 +31,11 @@ app.use(express.static('public'))
 app.use(routes)
 
 sequelize.sync()
+// add a port definition
+const PORT = process.env.PORT || 3001;
 
-app.listen(3001, () => {
+app.listen(PORT, () => {
     console.log('server is running 3001')
 })
+
 
