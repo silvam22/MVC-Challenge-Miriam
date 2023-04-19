@@ -52,7 +52,7 @@ WHEN I am idle on the site for more than a set time
 THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
 
 ## Installation
-Begin by forking this repo, you will need to use mysql, run 'source db/schema.sql', 'use ecommerce_db;' and 'quit', then run 'node seeds/server.js', and 'npm run dev'
+Begin by forking this repo, you will need to use mysql, and run 'npm run dev'
 
 ## Get in Touch
 If you have any questions or feedback about the application, please feel free to contact me at silvam@cwu.edu
